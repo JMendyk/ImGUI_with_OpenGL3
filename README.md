@@ -6,27 +6,30 @@ This repository is an example of working integration of [ImGUI](https://github.c
 
 ## Building
 
-If you're on UNIX/Linux you might need to install `sudo apt install xorg-dev` package.
-
-For more information, read [dependencies/README.md](https://github.com/JMendyk/ImGUI_with_OpenGL3/blob/master/dependencies/README.md).
-
 ```
 cmake .
 make
 ```
 
+If you're on UNIX/Linux you might need to install xorg-dev and RandR.
+If you're on Windows you might need to install GLUT.
+
+For more information regarding project dependencies, read [dependencies/README.md](https://github.com/JMendyk/ImGUI_with_OpenGL3/blob/master/dependencies/README.md).
+
 ## Notes / TODO
 
-1. GL3W
-    - requires python
-    - required cmake & make after cloning from repository
-    - when trying to do a out-of-source build from `build` folder, GL3W gets 
-      copied to build folder but does not get cmake & make'd, thus currently
-      out-of-source build is impossible
+1. Improve dependency management.
 
-    **TODO:** Consider getting rid of GL3W in favour of some better maintaned library.
+2. GL3W
+    - requires python to be built
+      (partially solved by distributing build version)
+    - requires cmake & make after cloning from repository
+      (partially solved by distributing build version)
+    - when trying to do an out-of-source build, GL3W gets copied
+      to build folder but does not get properly built,
+      thus currently out-of-source build is impossible
 
-2. Improve CMake build system
+3. Improve CMake build system.
 
 ## Credits
 

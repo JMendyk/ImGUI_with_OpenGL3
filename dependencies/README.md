@@ -37,6 +37,20 @@ ImGUI integration for OpenGL3 & GLFW.
 
 ### UNIX/Linux
 
-On UNIX/Linux **xorg-dev** is required for complilation of the project.
-It is usually possibile using your distribution package manager. 
-In case of Ubuntu that is apt, install using `sudo apt install xorg-dev`.
+On UNIX/Linux **xorg-dev** and **RandR** are required for complilation of the project.
+It is usually possibile using your distribution package manager, for example on Ubuntu: `sudo apt install xorg-dev`.
+
+
+### Windows
+
+Building on Windows was tested with 2 configurations:
+
+1. CLion IDE with included build tools
+
+Plainly import cloned repository's folder into CLion. As build configuration pick `imgui_with_opengl3` and make sure that in CMake's settings "Generation path" is set to ".". See related issue why this is required: (https://github.com/JMendyk/ImGUI_with_OpenGL3/issues/1)[https://github.com/JMendyk/ImGUI_with_OpenGL3/issues/1].
+
+2. [MinGW](http://www.mingw.org/) + [CMake](https://cmake.org/) + [FreeGLUT](https://www.transmissionzero.co.uk/software/freeglut-devel/)
+
+Make sure that CMake as well as MinGW build tools are present in PATH. The easiest way to install FreeGLUT is to put it's folders into respective ones in your MinGW folder. 
+
+In some cases CMake may complain about missing Visual C++ compiler. Assuming you want to compile using MinGW, call cmake with flag `cmake -G "MinGW Makefiles"`.
