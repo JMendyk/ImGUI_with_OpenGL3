@@ -1,0 +1,39 @@
+# pack-refs with: peeled fully-peeled 
+315674da90d39a7343568f88e10a270adb3b9f7b refs/remotes/origin/capturecursor
+682f1cf203707f21c2eed4fa3f89c23c52accc49 refs/remotes/origin/ci
+cad8f2f7d56db4c499bb26fc6b99f193a4fe5f1f refs/remotes/origin/drag-window
+4e1d7e92661bb1461b85fdbd4466905e01612dd2 refs/remotes/origin/egldevice
+8429402f9e285b94a95b2193b61f36d87f4e475f refs/remotes/origin/get-event-time
+999f3556fdd80983b10051746264489f2cb1ef16 refs/remotes/origin/latest
+682f1cf203707f21c2eed4fa3f89c23c52accc49 refs/remotes/origin/master
+70297aeb493541072545760c379dd170ba54acbb refs/remotes/origin/metal-guide
+c8d4bae93a5345a9cc5a7d722a6c4b64d3feae0e refs/remotes/origin/mirroring
+0f0616972a3f154acc874f326ef1afed376d2125 refs/remotes/origin/new-fullscreen-bugs
+1d97beef46b9b762a516658d1842e6ae5ad478bd refs/remotes/origin/no-msvcrt
+ed59b80cc7e52db318453934755b1b2c661191a2 refs/remotes/origin/preedit-ime
+0a4c893fc604a221bb0f38f0afecb5af2efb6db7 refs/remotes/origin/rosetta-guide
+8dee04080ec22c6618474aa975ba5bbd9c1df81a refs/remotes/origin/thirteen
+14a18c8288c3c4f78e5013877340b74eb1ae50d5 refs/remotes/origin/touch
+0a9038f47a74c088614872eb56e452a72dca08b6 refs/remotes/origin/x11-event-time
+20079f94d45b88ee2fce55fbcc6a50773d11864e refs/remotes/origin/x11-inhibit-screensaver
+5e514ce9c6ebb7d888af5d4ad9d1b66bb56c5ab9 refs/remotes/origin/xsync
+f862285d18269320f3c875aebb5810e92b8619e0 refs/tags/3.0
+^5da6a903f9a533063a77400b0a8873d5c9753f99
+f11013299afeaf4b273573d0c67c8693588ba5b7 refs/tags/3.0.1
+^22e1aa6cfcb93779040d5b465dc077aa2f3a8245
+e30b82a93ef05a8928146f4e54ddf326cceb9e00 refs/tags/3.0.2
+^58aef89521f22b8aa389b43037b60b44e959471c
+610e293c65d8be495eb367559e17b7ffc2da941b refs/tags/3.0.3
+^fd4ea8bc254d76eabe05c5380f419400cb6936a0
+e4d3f860977baa314f022d7db5ed3420389ba372 refs/tags/3.0.4
+^eab31f228fd1872753c55fb438e3d88e51c0e9b2
+3c3f404f3491443bb71f387caa8fe803786cbce4 refs/tags/3.1
+^4188c263e31ec3d5da99a77d939ab56bc199fda6
+3e3e40e7b292cd30357ed238840f5bcf6006d955 refs/tags/3.1.1
+^29b40112c234c3021648ea42a5e74cc122ba08b4
+2d8790fe0214f536b52bb2005ca259c26a270978 refs/tags/3.1.2
+^30306e54705c3adae9fe082c816a3be71963485c
+99ab656443ffd83f6a6ee2027ecb8de5f6814cce refs/tags/3.2
+^f6ec835599123c3c970d34534ed7ddc69a1fc6af
+1b8e3fdeae93df6d211529140439c644fcc45f87 refs/tags/3.2.1
+^999f3556fdd80983b10051746264489f2cb1ef16
