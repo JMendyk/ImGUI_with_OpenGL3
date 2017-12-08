@@ -4,16 +4,18 @@
 ## General information 
 
 Project to work properly requires:
-1. OpenGL3
-2. GL3W
-3. GLFW
-4. ImGUI
-5. imgui\_impl\_glfw\_gl3
+- OpenGL3
+- GL3W
+- GLFW
+- ImGUI
+- imgui\_impl\_glfw\_gl3
 
-1. OpenGL3
+## Dependencies description
+
+### OpenGL3
 OpenGL3 is required to be installed on user's computer for proper compilation and non-development usage.
 
-2. [GL3W](https://github.com/skaslev/gl3w) (included in project's source)
+### [GL3W](https://github.com/skaslev/gl3w) (included in project's source)
 *Maintainer does not provide versions nor releases thus master branch is used.*
 Requires Python and building before usage with commands:
 ```
@@ -21,13 +23,13 @@ cmake .
 make
 ```
 
-3. [GLFW](https://github.com/glfw/glfw) (included in project's source)
+### [GLFW](https://github.com/glfw/glfw) (included in project's source)
 *Version tagged 3.2.1.*
 
-4. [ImGUI](https://github.com/ocornut/imgui) (included in project's source)
+### [ImGUI](https://github.com/ocornut/imgui) (included in project's source)
 *Version tagged v1.52.*
 
-5. [imgui\_impl\_glfw\_gl3](https://github.com/ocornut/imgui) (included in project's source)
+### [imgui\_impl\_glfw\_gl3](https://github.com/ocornut/imgui) (included in project's source)
 *Version tagged v1.52. Sourced directly from ImGUI's repo.*
 ImGUI integration for OpenGL3 & GLFW.
 
