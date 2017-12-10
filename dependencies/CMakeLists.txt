@@ -1,20 +1,3 @@
-########## External Dependencies ##########
-
-##### OpenGL and GLUT #####
-find_package(OpenGL REQUIRED)
-find_package(GLUT REQUIRED)
-
-if (OpenGL_FOUND AND GLUT_FOUND)
-        include_directories(${OpenGL_INCLUDE_DIRS})
-        target_link_libraries(imgui_with_opengl3 ${OpenGL_LIBRARIES})
-        include_directories(${GLUT_INCLUDE_DIRS})
-        target_link_libraries(imgui_with_opengl3 ${GLUT_LIBRARIES})
-    else()
-        message(SEND_ERROR "OpenGL or GLUT not found. Make sure that they are installed.")
-endif (OpenGL_FOUND AND GLUT_FOUND)
-
-########## Included Dependencies ##########
-
 set(DEPS_DIR ${CMAKE_CURRENT_LIST_DIR})
 
 ##### GLFW #####
