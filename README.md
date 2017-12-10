@@ -1,4 +1,5 @@
 # Example working integration of ImGUI with OpenGL3
+[![Build Status](https://travis-ci.org/JMendyk/ImGUI_with_OpenGL3.svg?branch=master)](https://travis-ci.org/JMendyk/ImGUI_with_OpenGL3)
 
 ## Introduction
 
