@@ -7,7 +7,9 @@ This repository is an example of working integration of [ImGUI](https://github.c
 ## Building
 
 ```
-cmake .
+mkdir build
+cd build
+cmake ..
 make
 ```
 
@@ -20,7 +22,12 @@ For more information regarding project dependencies, read [dependencies/README.m
 
 1. Improve dependency management.
 
-2. GL3W
+Along with fixing [https://github.com/JMendyk/ImGUI_with_OpenGL3/issues/1](https://github.com/JMendyk/ImGUI_with_OpenGL3/issues/1) new improved dependency management process was introduced.
+Instead of including complete repositories of dependencies, `dependencies/setup_dependencies.sh` clones and organizes each dependency. While it's not perfect, it does better job than previous solution and fixes mentioned issue which made out-of-source builds impossible.
+
+Dependencies are still included in the repository, thus no actions are required to download them.
+
+2. GL3W (solved with new dependency management)
     - requires python to be built
       (partially solved by distributing build version)
     - requires cmake & make after cloning from repository

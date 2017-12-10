@@ -28,15 +28,11 @@ set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 add_subdirectory(${GLFW_DIR})
 target_link_libraries(imgui_with_opengl3 glfw)
 
-
-
 ##### GL3W #####
 set(GL3W_DIR ${DEPS_DIR}/gl3w)
 
-add_subdirectory(${GL3W_DIR})
-target_link_libraries(imgui_with_opengl3 gl3w)
-
-
+target_include_directories(imgui_with_opengl3 PUBLIC ${GL3W_DIR})
+target_sources(imgui_with_opengl3 PUBLIC ${GL3W_DIR}/GL/gl3w.c)
 
 ##### ImGUI #####
 set(IMGUI_DIR ${DEPS_DIR}/imgui)
@@ -51,7 +47,7 @@ target_sources(imgui_with_opengl3
 )
 
 ##### imgui_impl_glfw_gl3 #####
-set(IMGUI_IMPL_GLFW_GL3_DIR ${IMGUI_DIR}/examples/opengl3_example)
+set(IMGUI_IMPL_GLFW_GL3_DIR ${DEPS_DIR}/imgui_impl_glfw_gl3)
 
 target_include_directories(imgui_with_opengl3 PUBLIC ${IMGUI_IMPL_GLFW_GL3_DIR})
 target_sources(imgui_with_opengl3 
